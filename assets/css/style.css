@@ -58,11 +58,52 @@ html {
 }
 /* Header Css Start */
 .top-header {
-    background-color: var(--dark-green);
+  background-color: var(--dark-green);
+}
+.top-header p {
+  font-size: 15px;
 }
 .menu ul li a {
-    font-size: 15px;
-    color: var(--black);
-    font-weight: 500;
+  font-size: 15px;
+  color: #999999;
+  font-weight: 400;
+  transition: all 0.5s ease-in;
+}
+.menu ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--dark-green);
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transition: all 0.5s ease-in;
+}
+.menu ul li a:hover::before {
+  transform: scaleX(1);
+}
+.menu ul li a:hover {
+  color: var(--dark-green) !important;
+}
+.cart-icon i {
+  font-size: 20px;
+}
+.shoping-icon span {
+  display: inline-block;
+  background-color: var(--dark-green);
+  top: -12px;
+  right: -12px;
+  width: 20px;
+  height: 20px;
+}
+.customer-service span,
+.cart-title h6 {
+  color: #999999;
+  font-size: 12px;
+}
+.customer-service a,
+.cart-title span {
+  font-size: 14px;
 }
 /* Header Css End */
